@@ -6,15 +6,15 @@ metadata:
     app: myhttpd
 spec:
  containers:
-   - name: my-pod-container
+   - name: my-pod
      image: nginx:latest
      ports:
       - name: httpd
         containerPort: 80
         protocol: TCP
-   - name: secound-container
+   - name: my-pod2
      image: tomcat  
      ports: 
       - name: java
-        container: 8080
+        containerPort: 8080
         protocol: TCP
