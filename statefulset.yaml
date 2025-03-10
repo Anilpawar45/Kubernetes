@@ -3,7 +3,11 @@ kind: Statefulset
 metadata:
     - name: my-statefulset
 spec:
-   templates:
+  selector:
+    matchLabels:
+          app: mariadb
+  replicas: 3    
+  templates:
      metadata:
       labels:
           app: mariadb
@@ -17,8 +21,4 @@ spec:
                      containerPort: 3306
                 env: 
                   - name: MYSQL_ROOT_PASSWORD
-                    value: "REDHAT"  
-     selector:
-        matchLabels:
-               app: mariadb
-     replicas: 3                                       
+                    value: "REDHAT" 
