@@ -1,0 +1,12 @@
+env: 
+  - name: MYSQL_ROOT_PASSWORD
+    valuefrom:
+        ConfigMapkeyRef:
+        name: my-configmap
+        key: DB_PASSWORD
+  - name: MYSQL_USER_NAME
+    valuefrom:
+        ConfigMapkeyRef:
+         name: my-configmap
+         key: DB_USER
+replicas: 4         

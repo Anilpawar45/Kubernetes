@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+    name: my-deployment
+spec: 
+    templates:
+        metadata:
+          labels:
+            app: student-app
+          spec: 
+             containers:
+                 - name: my-app
+                   image: nginx
+                   ports:
+                       - name: http
+                         protocoal: TCP
+                         ContainerPort: 80
+    replicas: 4   
+    selector:
+         matchLabels:
+             app-student-app
+    Strategy:
+        type: Rollingupdate                               

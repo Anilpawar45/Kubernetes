@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Statefulset
+metadata:
+    - name: my-statefulset
+spec:
+   templates:
+     metadata:
+      labels:
+          app: mariadb
+     spec:    
+         containers:
+              - name: my-mariadb-container
+                image: mysql
+                ports:
+                   - name: mysql
+                     protocol: TCP
+                     containerPort: 3306
+                env: 
+                  - name: MYSQL_ROOT_PASSWORD
+                    value: "REDHAT"  
+     selector:
+        matchLabels:
+               app: mariadb
+     replicas: 3                                       
