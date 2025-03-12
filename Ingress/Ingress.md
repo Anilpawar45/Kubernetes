@@ -125,3 +125,5 @@ spec:
             port: 
               number: 80
     ```
+![Screenshot (22)](https://github.com/user-attachments/assets/6dd86a99-a332-4512-9fda-d86f2a9b91a3)
+
