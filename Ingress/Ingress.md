@@ -127,6 +127,9 @@ spec:
 
 
 
+
+
+
 ### deployment
 ```
 kebuctl apply -f deployment.yaml
