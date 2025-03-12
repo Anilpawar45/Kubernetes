@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: home-page-service
+  labels:
+    app: home-page-service
+    env: devops
+spec:
+  selector:
+    app: home-page
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mobile-page-serivce
+  labels:
+    app: mobile-page-serivce
+    env: devops
+spec:
+  selector:
+    app: mobile-page
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80

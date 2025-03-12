@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-anil
+  labels:
+    name: ingress-anil
+spec:
+  rules:
+  - host: anil.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: home-page-service
+            port: 
+              number: 80
+  - host: anil.mobile.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: mobile-page-serivce
+            port: 
+              number: 80
