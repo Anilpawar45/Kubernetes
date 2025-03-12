@@ -18,16 +18,36 @@ Authentication and security mechanisms
 ![image](https://github.com/user-attachments/assets/470122fa-b401-48f9-9e42-581b4d0bf547)
 
 
-### Deployment.yaml
-'''bash
+### Deployment file
+'''
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: home-page
+spec:
+  selector:
+    matchLabels:
+      app: home-page
+  template:
+    metadata:
+      labels:
+        app: home-page
+    spec:
+      containers:
+      - name: home-page
+        image: httpd:alpine
+        ports:
+        - containerPort: 80
+        '''
 ---
->apiVersion: apps/v1
->kind: Deployment
->metadata:
- > name: mobile-page
->spec:
-  >selector:
-    >matchLabels:
+'''
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mobile-page
+spec:
+  selector:
+    matchLabels:
       app: mobile-page
   template:
     metadata:
@@ -39,9 +59,4 @@ Authentication and security mechanisms
         image: nginx
         ports:
         - containerPort: 80
-        '''**
-   1. ** command **
-     ''' bash
-       kubectl get pods
-      '''     
-
+        '''
