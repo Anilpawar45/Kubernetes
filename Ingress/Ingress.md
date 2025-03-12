@@ -125,5 +125,5 @@ spec:
             port: 
               number: 80
     ```
-![Screenshot (22)]
+![image ("C:\Users\Admin\Pictures\Screenshots\Screenshot (22).png")]
 
