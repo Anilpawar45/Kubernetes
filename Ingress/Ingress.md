@@ -58,4 +58,8 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
-        '''
+        '''**
+   1. ** command **
+     ''' bash
+       kubectl get pods
+      '''     
