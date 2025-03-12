@@ -143,9 +143,9 @@ ls
 ```
 ### create pods,nods and container
 show file 
-1.deployment.yaml
-2.service.yaml
-3.Ingress.yaml
+>1.deployment.yaml
+>2.service.yaml
+>3.Ingress.yaml
 ```
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
