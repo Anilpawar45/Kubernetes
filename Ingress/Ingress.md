@@ -159,7 +159,7 @@ kubectl get namespace
 ```
 minikube addons enable ingress
 kubectl get pods -n ingress-nginx
-```
+
 
 ```
 kubectl get pods -o wide
