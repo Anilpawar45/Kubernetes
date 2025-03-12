@@ -157,8 +157,10 @@ kubectl get deploy
 kubectl get service
 kubectl get namespace
 ```
+```
 minikube addons enable ingress
 kubectl get pods -n ingress-nginx
+```
 
 
 ```
