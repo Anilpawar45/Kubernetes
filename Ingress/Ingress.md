@@ -20,43 +20,5 @@ Authentication and security mechanisms
 
 ### Deployment file
 '''
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: home-page
-spec:
-  selector:
-    matchLabels:
-      app: home-page
-  template:
-    metadata:
-      labels:
-        app: home-page
-    spec:
-      containers:
-      - name: home-page
-        image: httpd:alpine
-        ports:
-        - containerPort: 80
-        '''
----
+kubectl get pods
 '''
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: mobile-page
-spec:
-  selector:
-    matchLabels:
-      app: mobile-page
-  template:
-    metadata:
-      labels:
-        app: mobile-page
-    spec:
-      containers:
-      - name: mobile-page
-        image: nginx
-        ports:
-        - containerPort: 80
-        '''
