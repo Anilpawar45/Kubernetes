@@ -140,4 +140,14 @@ git push https://github.com/Anilpawar45/Kubernetes.git main
 git clone https://github.com/Anilpawar45/Kubernetes.git main
 cd Kubernetes/
 ls
-
+```
+### create pods,nods and container
+show file 
+1.deployment.yaml
+2.service.yaml
+3.Ingress.yaml
+```
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+kubectl apply -f Ingress.yaml
+```
