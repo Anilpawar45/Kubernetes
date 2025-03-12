@@ -20,32 +20,14 @@ Authentication and security mechanisms
 
 ### Deployment.yaml
 '''bash
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: home-page
-spec:
-  selector:
-    matchLabels:
-      app: home-page
-  template:
-    metadata:
-      labels:
-        app: home-page
-    spec:
-      containers:
-      - name: home-page
-        image: httpd:alpine
-        ports:
-        - containerPort: 80
 ---
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: mobile-page
-spec:
-  selector:
-    matchLabels:
+>apiVersion: apps/v1
+>kind: Deployment
+>metadata:
+ > name: mobile-page
+>spec:
+  >selector:
+    >matchLabels:
       app: mobile-page
   template:
     metadata:
