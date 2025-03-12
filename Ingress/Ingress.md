@@ -125,6 +125,4 @@ spec:
             port: 
               number: 80
 
-## deployment,service and ingress 
-
 
