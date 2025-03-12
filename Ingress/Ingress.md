@@ -132,5 +132,6 @@ spec:
 
 
 ```
-kebuctl apply -f deployment.yaml
+deployment.yaml
 ```
+kubectl apply -f deployment.yaml
