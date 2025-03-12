@@ -128,10 +128,10 @@ spec:
 
 
 
-
-
-
 ```
-deployment.yaml
+### Then push all files in git hub repository
 ```
-kubectl apply -f deployment.yaml
+git add .
+git commit -m ""
+git push origin main
+```
