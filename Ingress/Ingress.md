@@ -132,6 +132,12 @@ spec:
 ### Then push all files in git hub repository
 ```
 git add .
-git commit -m ""
-git push origin main
+git commit -m "create ingress file"
+git push https://github.com/Anilpawar45/Kubernetes.git main
 ```
+### clone repositories
+```
+git clone https://github.com/Anilpawar45/Kubernetes.git main
+cd Kubernetes/
+ls
+
