@@ -124,10 +124,7 @@ spec:
             name: mobile-page-serivce
             port: 
               number: 80
-    ```
 
-
-## Deployment,sercice and ingress file deploy
-![Screenshot (23)](https://github.com/user-attachments/assets/99ae194d-aa46-4259-8e42-0a5075d95d8b)
+## deployment,service and ingress 
 
 
