@@ -126,3 +126,8 @@ spec:
               number: 80
 
 
+
+### deployment
+```
+kebuctl apply -f deployment.yaml
+```
