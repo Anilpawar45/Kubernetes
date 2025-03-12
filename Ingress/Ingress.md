@@ -1,2 +1,15 @@
 # Ingress Deployment
 This repository contains the configuration files for deploying an Ingress in a Kubernetes cluster. Ingress is used to manage external access to services within the cluster, providing HTTP and HTTPS routing.
+## Why Use Ingress?
+Without Ingress, you typically expose services using:
+
+NodePort – Assigns a port on each node.
+LoadBalancer – Provisions a cloud provider's load balancer.
+ClusterIP – Only accessible within the cluster.
+Ingress provides a more scalable and efficient way to manage external access with features like:
+
+Path-based routing (e.g., /app1 → service1, /app2 → service2)
+Host-based routing (e.g., app.example.com → service1, api.example.com → service2)
+TLS termination (HTTPS)
+Rewrite and redirect rules
+Authentication and security mechanisms
