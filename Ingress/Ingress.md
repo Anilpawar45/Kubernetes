@@ -19,6 +19,6 @@ Authentication and security mechanisms
 
 
 ### Deployment file
-'''
+```
 kubectl get pods
-'''
+```
