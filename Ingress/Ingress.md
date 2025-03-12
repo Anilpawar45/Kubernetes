@@ -167,6 +167,7 @@ kubectl get pods -n ingress-nginx
 kubectl get pods -o wide
 minikube ssh
 curl 10.244.0.6
+```
 
 ![Screenshot (22)](https://github.com/user-attachments/assets/075e11e1-32d1-4b4f-8513-66742468bf82)
 ![Screenshot (24)](https://github.com/user-attachments/assets/b33e0c76-30c8-490f-a967-ad4b346de8b1)
