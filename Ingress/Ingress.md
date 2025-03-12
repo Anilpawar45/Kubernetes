@@ -153,7 +153,7 @@ kubectl apply -f Ingress.yaml
 ```
 kubectl get pods
 ```
-show pods
+minikube ssh
 ```
 
 ![Screenshot (22)](https://github.com/user-attachments/assets/075e11e1-32d1-4b4f-8513-66742468bf82)
