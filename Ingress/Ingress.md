@@ -20,6 +20,7 @@ Authentication and security mechanisms
 
 ## Deployment.yaml
 
+'''bash
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -57,3 +58,4 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+        '''
