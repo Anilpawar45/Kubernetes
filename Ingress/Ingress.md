@@ -59,3 +59,69 @@ spec:
         - containerPort: 80
 
 ```
+### Service.yaml
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: home-page-service
+  labels:
+    app: home-page-service
+    env: devops
+spec:
+  selector:
+    app: home-page
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mobile-page-serivce
+  labels:
+    app: mobile-page-serivce
+    env: devops
+spec:
+  selector:
+    app: mobile-page
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+   ```
+### Ingress.yaml
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-anil
+  labels:
+    name: ingress-anil
+spec:
+  rules:
+  - host: anil.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: home-page-service
+            port: 
+              number: 80
+  - host: anil.mobile.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: mobile-page-serivce
+            port: 
+              number: 80
+    ```
